@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import Welcome from '../components/Welcome'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
+import Teamsection from '../components/Teamsection'
 
 export default function Home() {
   return (
@@ -17,9 +18,10 @@ export default function Home() {
      
       <div className='gradient-bg-welcome '>
       <Navbar/>
+      {/* <Welcome/> */}
       <Header/>
-      <Welcome/>
       </div>
+      <Teamsection/>
       <Footer/>
     </div>
   )
