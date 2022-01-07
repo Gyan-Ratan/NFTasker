@@ -2,7 +2,7 @@ import React from 'react'
 
 const Teamsection = () => {
     return (
-        <div className="p-8 bg-white dark:bg-gray-800 shadow">
+        <div className="p-8 bg-transparent shadow">
             <p className="text-center text-3xl font-bold text-gray-800 dark:text-white">
                 Professional team
             </p>
