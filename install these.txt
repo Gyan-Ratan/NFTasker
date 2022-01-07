@@ -1,4 +1,4 @@
 npm install
-npm install nodejs
+npm install tailwindcss
 npm install moralis
 npm install @mui/material @emotion/react @emotion/styled        //material UI
