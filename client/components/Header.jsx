@@ -7,11 +7,11 @@ const Header = () => {
           <div className="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
             <h2 className="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
               <span className="block">
-                Mother hearth host your travel
+                NFTasker
               </span>
             </h2>
             <p className="text-md mt-4 text-gray-400">
-              The state of Utah in the united states is home to lots of beautiful National parks, Bryce national canion park ranks as three of the most magnificient &amp; awe inspiring.
+              This is World's First Gamified Todo Dapp with Blockchain implementation and NFTs as Rewards.
             </p>
             <div className="lg:mt-0 lg:flex-shrink-0">
               <div className="mt-12 inline-flex rounded-md shadow">
@@ -25,7 +25,7 @@ const Header = () => {
             <img src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" className="rounded-lg w-1/2" alt="Tree" />
             <div>
               <img src="https://cdn-icons-png.flaticon.com/128/6298/6298900.png" className="rounded-lg mb-9" alt="Tree" />
-              <img src="https://images.unsplash.com/photo-1628544106915-0d756c7dadfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" className="rounded-lg" alt="Tree" />
+              <img src="https://info.trello.com/hubfs/Imported_Blog_Media/gamification_of_life-1024x512.jpg" className="rounded-lg" alt="Tree" />
             </div>
           </div>
         </div>
