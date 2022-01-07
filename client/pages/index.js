@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Welcome from '../components/Welcome'
 import styles from '../styles/Home.module.css'
+import Header from '../components/header'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
      
       <div className='gradient-bg-welcome '>
       <Navbar/>
+      <Header/>
       <Welcome/>
       </div>
     </div>
