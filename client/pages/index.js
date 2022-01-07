@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
+import Welcome from '../components/Welcome'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <h1> THIS IS NFTasker (under development)</h1>
       <Navbar/>
+      <Welcome/>
     </div>
   )
 }
