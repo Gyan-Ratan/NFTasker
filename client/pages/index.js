@@ -20,8 +20,12 @@ export default function Home() {
       <Navbar/>
       {/* <Welcome/> */}
       <Header/>
-      </div>
       <Teamsection/>
+      
+      
+      
+      </div> 
+      {/* THIS DIV IS DAGEROUS */}
       <Footer/>
     </div>
   )
