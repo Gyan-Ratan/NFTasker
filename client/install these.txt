@@ -7,3 +7,7 @@ npm install moralis
 npm install @mui/material @emotion/react @emotion/styled        //material UI
 
 npm install @alan-ai/alan-sdk-web --save
+
+npm install uuid  //todo
+
+npm install classnames //todo
