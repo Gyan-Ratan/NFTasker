@@ -6,9 +6,7 @@ import { Loader } from './'
 import shortenAddress from '../utils/shortenAddress';
 import { injected } from './Wallet/Connected'
 import { useWeb3React } from '@web3-react/core'
-// import { connect } from 'net'
 
-const {ethers} = window();
 
 const commonStyles = 'min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-white text-sm font-light text-white'
 const  Welcome = () => {
@@ -33,14 +31,14 @@ const  Welcome = () => {
                     <p className='text-ledt mt-5 text-slate-100 font-light md:w-9/12 w-11/12 text-base '>
                         NFTasker give you NFTs to do your TASK Honestly. and You can get NFTs as reward for your Familys to do their TASK.
                     </p>
-                    {/* {!currentAccount && ( */}
+                    {!active && (
                         <button type='button' 
                             onClick={connect}
                             className='flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd] '
                         >
                             <p className='text-white text-base font-semibold'>Connect Wallet</p>
                         </button>
-                     {/* )}  */}
+                     )}  
 
                     <div className='grid sm:grid-cols-3 grid-cols-2 w-full mt-10'>
                         <div className={`rounded-tl-2xl ${commonStyles}`}>
