@@ -1,7 +1,5 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
-  "private": true,
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,20 +8,34 @@
   },
   "dependencies": {
     "@nextui-org/react": "^1.0.1-alpha.52",
+    "@alan-ai/alan-sdk-web": "^1.8.29",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "@mui/material": "^5.2.7",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
     "autosize": "^5.0.1",
     "clsx": "^1.1.1",
     "corejs": "^1.0.0",
-    "next": "^11.1.2",
     "nprogress": "^0.2.0",
-    "react": "^17.0.2",
     "react-beautiful-dnd": "^13.0.0",
-    "react-dom": "17.0.2",
-    "react-iconly": "^2.2.3",
     "react-redux": "^7.2.5",
     "react-scripts": "^4.0.3",
     "react-test-renderer": "^17.0.2",
     "redux": "^4.1.1",
     "redux-thunk": "^2.3.0",
+    "moralis": "^0.0.183",
+    "net": "^1.0.2",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-iconly": "^2.2.5",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.1",
+    "swarm-js": "^0.1.40",
+    "web3": "^1.6.1",
     "reselect": "^4.0.0"
   },
   "devDependencies": {
@@ -41,6 +53,16 @@
     "jest": "^27.3.0",
     "react-testing-library": "^8.0.1",
     "redux-devtools-extension": "^2.13.9",
-    "redux-mock-store": "^1.5.4"
+    "redux-mock-store": "^1.5.4",
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "autoprefixer": "^10.4.2",
+    "chai": "^4.3.4",
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.3",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.12"
   }
 }
