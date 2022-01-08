@@ -7,6 +7,7 @@ import Welcome from '../components/Welcome'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import Teamsection from '../components/Teamsection'
+import Todo from '../components/Todo'
 // import Alanait from '../components/Alanait'
 // import TodosApp from "../todo/TodosApp";
 // This is for Alan AI
@@ -26,6 +27,7 @@ export default function Home() {
       <div className='gradient-bg-welcome '>
       <Navbar/>
       <Header/>
+      <Todo/>
       <Teamsection/>
       <Welcome/>
       {/* <Alanait/> */}
