@@ -9,8 +9,9 @@ import { useMoralis } from "react-moralis";
 const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer${classProps}`}>{title}</li>;
 };
-const { authenticate } = useMoralis();
+
 const Navbar = () => {
+  const { authenticate } = useMoralis();
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="">
