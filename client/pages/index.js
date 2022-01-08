@@ -6,7 +6,7 @@ import Welcome from '../components/Welcome'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import Teamsection from '../components/Teamsection'
-import Login from '../components/Login'
+// import Login from '../components/Login'
 
 export default function Home() {
   return (
