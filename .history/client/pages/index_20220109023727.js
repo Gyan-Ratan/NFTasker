@@ -9,7 +9,6 @@ import Header from '../components/header'
 import Teamsection from '../components/Teamsection'
 import Todo from '../components/Todo'
 import { useMoralis } from 'react-moralis'
-import Login from './Login'
 // import Alanait from '../components/Alanait'
 
 // This is for Alan AI
@@ -30,16 +29,17 @@ export default function Home() {
       </Head>
 
       <div className='gradient-bg-welcome '>
-      
-
-        
-        <Navbar />
+      <Navbar />
+      <Login
+        <Todo/>
+        <Footer />
+        {/* <Navbar />
         <Header />
         <Teamsection />
         <Welcome />
-        {/* <Alanait /> */}
+        <Alanait />
         
-        <Footer />
+        <Footer /> */}
       </div>
     </div>
 

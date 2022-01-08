@@ -37,7 +37,7 @@ export default function Home() {
         <Header />
         <Teamsection />
         <Welcome />
-        {/* <Alanait /> */}
+        <Alanait />
         
         <Footer />
       </div>

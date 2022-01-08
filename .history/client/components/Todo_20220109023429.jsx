@@ -45,7 +45,7 @@ const Todo = () => {
     };
 
     return (
-        <div className="h-screen bg-glassmorphism-welcome text-gray-100">
+        <div className="h-screen bg text-gray-100">
         <div className="w-3/4 mx-auto">
             <div className="pt-12">
                 <h6 className="mb-2 text-xs uppercase">Learning React</h6>

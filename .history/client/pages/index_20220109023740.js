@@ -30,16 +30,17 @@ export default function Home() {
       </Head>
 
       <div className='gradient-bg-welcome '>
-      
-
-        
-        <Navbar />
+      <Navbar />
+      <Login/>
+        <Todo/>
+        <Footer />
+        {/* <Navbar />
         <Header />
         <Teamsection />
         <Welcome />
-        {/* <Alanait /> */}
+        <Alanait />
         
-        <Footer />
+        <Footer /> */}
       </div>
     </div>
 
