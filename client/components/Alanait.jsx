@@ -3,6 +3,11 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 
 const alankey = '9a7748dbac42e98f278663cdc6fbf63f2e956eca572e1d8b807a3e2338fdd0dc/stage'
 
+
+
+
+
+
 const Alanait = () => {
     useEffect(() => {
         alanBtn({
@@ -11,7 +16,11 @@ const Alanait = () => {
             if (command === 'testCommand') {
                 alert('This code was executed');
                 }
-            }
+            },
+            rootEl: document.getElementById("alan-btn"),
+            bottom: '50px',
+            left: '50px',
+            zIndex: 10
         });
     }, []);
 
