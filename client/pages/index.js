@@ -19,9 +19,10 @@ export default function Home() {
      
       <div className='gradient-bg-welcome '>
       <Navbar/>
-      {/* <Welcome/> */}
+     
       <Header/>
       <Teamsection/>
+      <Welcome/>
       
       
       

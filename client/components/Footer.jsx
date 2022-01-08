@@ -6,7 +6,7 @@ const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
     <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
       <div className="flex flex-[0.5] justify-center items-center">
-        <div className="flex flex-row items-center text-center flex-1 ">
+        <div className="border-2">
           <a href="/" className="flex flex-row items-center flex-1 text-center">
             <h1 className="text-3xl text-white text-x-bold  p-3 ">N | </h1>
             <h3 className="text-white px-2">N F T A S K E R</h3>
