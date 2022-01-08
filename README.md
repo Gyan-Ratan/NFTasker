@@ -89,7 +89,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started [OPEN](https://github.com/Gyan-Ratan/NFTasker)
 1. Clone this repository
-2. Install all pachages inside ./client/ and ./contract/ individually
+2. Install all packages inside ./client/ and ./contract/ individually
 3. npm run dev
 
 ### Prerequisites
