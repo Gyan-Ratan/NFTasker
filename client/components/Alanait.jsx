@@ -17,7 +17,7 @@ const Alanait = () => {
 
 return (
     <div>
-        <h2>This is Alan Test</h2>
+
     </div>
 );
 
