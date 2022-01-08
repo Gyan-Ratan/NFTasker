@@ -48,7 +48,6 @@ const Todo = () => {
         <div className="h-screen bg-gray-900 text-gray-100">
         <div className="w-3/4 mx-auto">
             <div className="pt-12">
-                <h6 className="mb-2 text-xs uppercase">Learning React</h6>
                 <h1 className="text-4xl">Todo App</h1>
             </div>
 
@@ -63,24 +62,25 @@ const Todo = () => {
             </div>
 
             <ul className="pt-12">
+            <p className="text-center text-gray-600">______________________ TODO ______________________</p><br />
                 {items
                     .filter(({ done }) => !done)
                     .map(({ id, message, done }) => (
                         <li
                             key={id}
-                            className={cx("item",{done})}
+                            className={cx(styles.item)}
                             onClick={() => handleDone(id)}
                         >
                             {message}
                         </li>
                     ))}
-
+            <p className="text-center text-gray-600">______________________ DONE ______________________</p>
                 {items
                     .filter(({ done }) => done)
                     .map(({ id, message, done }) => (
                         <li
                             key={id}
-                            className={cx("item",{done})}
+                            className={cx(styles.item, styles.done)}
                             onClick={() => handleDone(id)}
                         >
                             {message}

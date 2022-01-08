@@ -116,11 +116,11 @@
 }   */
 
 .item {
-  @apply py-3 border border-t-0 border-gray-700;
+  @apply py-3 border-2 border-gray-700 border-r-2 rounded-md mt-1 p-3;
 }
 
 .item:first-child {
-  @apply border-t rounded-t;
+  @apply border-2 rounded;
 }
 
 .item:last-child {
