@@ -3,7 +3,7 @@ import {addTodoAction} from '../store/TodoStore/TodoActions'
 import {connect} from 'react-redux';
 import {Plus} from "react-iconly";
 import TodoForm from "./Forms/TodoForm";
-import {useShow, useStyle} from "../Hooks/hook";
+import {useShow, useStyle} from "../hooks/Hooks";
 
 const AddTodo = ({todos, addTodoAction, tabIndex}) => {
     const {show, setShow} = useShow()

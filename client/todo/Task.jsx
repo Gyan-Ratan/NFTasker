@@ -6,7 +6,7 @@ import {connect} from "react-redux";
 import {todosSelector} from "../store/TodoStore/TodoSelectors";
 import {deleteTodoAction, toggleTodoAction, updateTodoAction} from "../store/TodoStore/TodoActions";
 import DropDown from "./Common/DropDown";
-import {useOpen} from "../Hooks/hook";
+import {useOpen} from "../hooks/Hooks";
 import { Draggable } from 'react-beautiful-dnd';
 import clsx from "clsx";
 

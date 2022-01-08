@@ -6,7 +6,7 @@ import {Droppable, Draggable} from 'react-beautiful-dnd';
 import {connect} from "react-redux";
 import {todosSelector} from "../store/TodoStore/TodoSelectors";
 import {updateTasksAction} from "../store/TodoStore/TodoActions";
-import {useEditing} from '../Hooks/hook'
+import {useEditing} from '../hooks/Hooks';
 import clsx from "clsx";
 import FilterTodo from "./FilterTodo";
 import {filterTodoSelector} from "../store/FilterTodoStore/FilterTodoSelectors";

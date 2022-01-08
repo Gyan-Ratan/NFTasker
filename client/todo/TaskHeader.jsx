@@ -6,7 +6,7 @@ import {todosTitleSelector} from "../store/TodoStore/TodoSelectors";
 import {deleteBoxAction, deleteCompleted, updateTodoTitle} from "../store/TodoStore/TodoActions";
 import clsx from "clsx";
 import DropDown from "./Common/DropDown";
-import {useEditing, useOpen} from "../Hooks/hook";
+import {useEditing, useOpen} from "../hooks/Hooks";
 
 function TaskHeader(props) {
     const {count, index, title, updateTitle, deleteCompleted, deleteBoxAction} = props;

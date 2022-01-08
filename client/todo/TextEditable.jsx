@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import AddForm from "./Forms/AddForm";
-import {useEditing, useValue} from '../Hooks/hook'
+import {useEditing, useValue} from '../hooks/Hooks'
 
 function TextEditable(props) {
     const {isLarge, content, setStore, index, setParent, isFocus} = props;

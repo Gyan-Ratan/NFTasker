@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import clsx from "clsx";
-import {useDropdown} from "../../Hooks/hook";
+import {useDropdown} from "../../hooks/Hooks";
 
 function DropDown({menuList, marginPos, top, setOpen, open, buttonRef}) {
     const ref = useRef()

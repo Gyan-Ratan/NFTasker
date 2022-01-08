@@ -6,7 +6,7 @@ import clsx from "clsx";
 import {connect} from "react-redux";
 import {todosSelector} from "../store/TodoStore/TodoSelectors";
 import {addBoxAction} from "../store/TodoStore/TodoActions";
-import {useBox} from "../Hooks/hook";
+import {useBox} from "../hooks/Hooks";
 
 function AddBox(props) {
     const {isEditing, setIsEditing, value, setValue, handleClose} = useBox()
