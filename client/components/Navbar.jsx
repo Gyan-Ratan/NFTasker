@@ -27,9 +27,9 @@ const Navbar = () => {
           </div>
         </div>
         <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-          <NavbarItem title="Market" classProps=" " />
-          <NavbarItem title="Exchange" classProps=" " />
-          <NavbarItem title="Tutorials" classProps=" " />
+          {/* <NavbarItem title="Market" classProps=" " /> */}
+          {/* <NavbarItem title="Exchange" classProps=" " /> */}
+          {/* <NavbarItem title="Tutorials" classProps=" " /> */}
           <NavbarItem title="Wallets" classProps=" " />
           {/* {['Market', 'Exchange', 'Tutorials', 'Wallet'].map((item, index) => (
                         <NavbarItem
