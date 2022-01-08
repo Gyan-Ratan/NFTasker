@@ -8,15 +8,16 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import Teamsection from '../components/Teamsection'
 import Todo from '../components/Todo'
-import Alanait from '../components/Alanait'
+import { useMoralis } from 'react-moralis'
+// import Alanait from '../components/Alanait'
 
 // This is for Alan AI
 
-
+// const {  logout } = useMoralis();
 export default function Home() {
-  const {  logout } = useMoralis();
-  const isAuthenticated = false;
-  if (!isAuthenticated) { return <LoginMoralis /> }
+  
+  // const isAuthenticated = false;
+  // if (!isAuthenticated) { return <LoginMoralis /> }
   return (
 
     <div className='w-full h-screen'>
