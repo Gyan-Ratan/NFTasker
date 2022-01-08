@@ -1,51 +1,45 @@
-import React from "react";
+import React from 'react'
 const Teamsection = () => {
-  return (
-      <div className="w-full flex md:justify-center justify-between items-center p-4">
-    <div className="flex felx-col flex-1 text-bold from-neutral-200 uppercase ">
-      <div className="grid grid-cols-4 text-white   p-2 gap-6 place-content-center items-center bg-glassmorphism-welcome">
-     
-          <div className=" white-glassmorphism space-x-2 space text-center align-middle">
-            <div className="">
-              <img
-                className=" "
-                src="https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png"
-              ></img>
-              <h1 className="text-center  p-2">individual</h1>
+    return (
+<div className='flex felx-col flex-auto  w-full flex-wrap'>
+    
+    <div className="flex flex-auto flex-row flex-wrap text-white gradient-bg-welcome p-2 gap-6 place-content-center items-center bg-glassmorphism-welcome" >
+        <div className="p-2 h-auto white-glassmorphism space-x-2 space basis-1/5 md:basis-1/3">
+            <div className='h-auto w-auto m-auto p-10'>
+                <img className='h-52 w-52 m-auto object-cover' src='https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png'></img>
+                <h1 className='text-center text-xl '>Individual</h1>
+                <p className='text-base text-center mt-2 text-blue-400'>Individual person can create their own ToDo list and assign their Good and Bad habits and are awarded points for folloing good habits and points are decremented if doing bad habits</p>
             </div>
-          </div>
-          <div className=" white-glassmorphism space-x-2 space">
-            <div className="">
-              <img
-                className=""
-                src="https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png"
-              ></img>
-              <h1 className="text-center font-thin  p-2 ">Join Team</h1>
-            </div>
-          </div>
-          <div className=" white-glassmorphism space-x-2 space">
-            <div className="">
-              <img
-                className=""
-                src="https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png"
-              ></img>
-              <h1 className="text-center md:text-sm  p-2">Join Organisation</h1>
-            </div>
-          </div>
-          <div className=" white-glassmorphism space-x-2 space">
-            <div className="">
-              <img
-                className=""
-                src="https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png"
-              ></img>
-              <h1 className="text-center  p-2  md:text-sm  ">Win NFTs</h1>
-            </div>
-          </div>
         </div>
-      </div>
-      </div>
-  
-  );
-};
 
-export default Teamsection;
+        <div className="p-2 h-auto white-glassmorphism space-x-2 space basis-1/5 md:basis-1/3">
+            <div className='h-auto w-auto m-auto p-10'>
+                <img className='h-52 w-52 m-auto object-cover' src='https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png'></img>
+                <h1 className='text-center text-xl '>Team</h1>
+                <p className='text-base text-center mt-2 text-blue-400'>Join or Create your own Group and set you resolution and follow and Showoff your Perfect score withs NFTs</p>
+            </div>
+        </div>
+
+        <div className="p-2 h-auto white-glassmorphism space-x-2 space basis-1/5 md:basis-1/3">
+            <div className='h-auto w-auto m-auto p-10'>
+                <img className='h-52 w-52 m-auto object-cover' src='https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png'></img>
+                <h1 className='text-center text-xl '>Join Organisation</h1>
+                <p className='text-base text-center mt-2 text-blue-400'>Create tracks for you teambers and track then then verify then to set the score Board</p>
+            </div>
+        </div>
+
+        <div className="p-2 h-auto white-glassmorphism space-x-2 space basis-1/5 md:basis-1/3">
+            <div className='h-auto w-auto m-auto p-10'>
+                <img className='h-52 w-52 m-auto object-cover' src='https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png'></img>
+                <h1 className='text-center text-xl '>Win NFTs</h1>
+                <p className='text-base text-center mt-2 text-blue-400'>You will get NFTs as rewards,<br />Top 5 members will get rare NTFs Weekly</p>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+    )
+}
+
+export default Teamsection
