@@ -113,6 +113,8 @@ Here's why:
 
     * npm install @alan-ai/alan-sdk-web --save
 
+    * npm install react-google-login
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
