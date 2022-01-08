@@ -13,7 +13,6 @@
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "@mui/material": "^5.2.7",
-    "firebase": "^9.6.2",
     "moralis": "^0.0.183",
     "next": "12.0.7",
     "react": "17.0.2",
