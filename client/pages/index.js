@@ -14,8 +14,8 @@ import Alanait from '../components/Alanait'
 
 
 export default function Home() {
-  const { isAuthenticated, logout } = useMoralis();
-  // const isAuthenticated = false;
+  const {  logout } = useMoralis();
+  const isAuthenticated = false;
   if (!isAuthenticated) { return <LoginMoralis /> }
   return (
 
@@ -28,13 +28,14 @@ export default function Home() {
       </Head>
 
       <div className='gradient-bg-welcome '>
-        <Navbar />
+        <Todo/>
+        {/* <Navbar />
         <Header />
         <Teamsection />
         <Welcome />
         <Alanait />
         
-        <Footer />
+        <Footer /> */}
       </div>
     </div>
 
