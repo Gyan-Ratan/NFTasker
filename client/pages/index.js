@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import React from 'react'
 import Image from 'next/image'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
@@ -7,9 +8,8 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import Teamsection from '../components/Teamsection'
 // import Alanait from '../components/Alanait'
-
+// import TodosApp from "../todo/TodosApp";
 // This is for Alan AI
-
 
 
 export default function Home() {
@@ -36,5 +36,17 @@ export default function Home() {
     </div>
    
   )
-  
 }
+
+// import TodosApp from "../todo/TodosApp";
+
+// export default function Home() {
+//     const handleAddTodo = () => {
+//         console.log("add");
+//     }
+//     return (<>
+//         <TodosApp/>
+//     </>)
+// }
+
+
