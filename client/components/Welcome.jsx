@@ -2,7 +2,7 @@ import React,{useContext} from 'react'
 import { AiFillPlayCircle } from 'react-icons/ai'
 import { SiEthereum } from 'react-icons/si'
 import { BsInfoCircle } from 'react-icons/bs'
-// import { Loader } from './'
+import { Loader } from './'
 
 import { TransactionsContext } from '../context/TransactionsContext'
 import shortenAddress from '../utils/shortenAddress';
@@ -20,9 +20,9 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
-    // const { connectWallet, currentAccount,formData,sendTransaction,handleChange} = useContext(TransactionsContext);
+    const { connectWallet, currentAccount,formData,sendTransaction,handleChange} = useContext(TransactionsContext);
 
-    // console.log(connectWallet);
+    console.log(connectWallet);
    
 
     const handleSubmit = (e) => {
@@ -47,14 +47,14 @@ const Welcome = () => {
                     <p className='text-ledt mt-5 text-slate-100 font-light md:w-9/12 w-11/12 text-base '>
                         Explore the Crypto World. Buy and Sell Cryptocurrencies easily with our Crypto Exchange.
                     </p>
-                    {/* {!currentAccount && ( */}
+                    {!currentAccount && (
                         <button type='button' 
-                            // onClick={connectWallet}
+                            onClick={connectWallet}
                             className='flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd] '
                         >
                             <p className='text-white text-base font-semibold'>Connect Wallet</p>
                         </button>
-                    {/* )} */}
+                     )} 
 
                     <div className='grid sm:grid-cols-3 grid-cols-2 w-full mt-10'>
                         <div className={`rounded-tl-2xl ${commonStyles}`}>
@@ -88,8 +88,8 @@ const Welcome = () => {
                             </div>
                             <div >
                                 <p className='text-white font-light text-sm  '>
-                                {/* {currentAccount ? `${shortenAddress(currentAccount)}` : 'Connect Wallet'} */}
-                                {'connect Wallet'}
+                                {currentAccount ? `${shortenAddress(currentAccount)}` : 'Connect Wallet'}
+                                {/* {'connect Wallet'} */}
                                 </p>
                                 <p className='text-white font-semibold text-lg mt-1'>
                                     Ethereum

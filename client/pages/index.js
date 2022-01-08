@@ -6,7 +6,6 @@ import Welcome from '../components/Welcome'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import Teamsection from '../components/Teamsection'
-// import Login from '../components/Login'
 import Alanait from '../components/Alanait'
 // This is for Alan AI
 
@@ -25,7 +24,6 @@ export default function Home() {
       <Header/>
       <Teamsection/>
       <Welcome/>
-      
       
       <Alanait/>
       </div> 

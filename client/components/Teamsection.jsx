@@ -1,38 +1,38 @@
 import React from 'react'
 const Teamsection = () => {
     return (
-<div className='flex flex-row flex-auto  w-full flex-wrap'>
+<div className='flex flex-row flex-auto  w-full '>
     
-    <div className="flex flex-row flex-wrap  text-white gradient-bg-welcome p-2 gap-6 place-content-center items-center bg-glassmorphism-welcome" >
-        <div className="p-2 h-auto w-64 white-glassmorphism space-x-2 space basis-1/5  md:basis-1/5">
-            <div className='h-auto p-5'>
+    <div className="flex flex-row flex-1  text-white  p-2 gap-6 place-content-center items-center bg-glassmorphism-welcome" >
+        <div className="p-2 h-auto w-64 eth-card white-glassmorphism space-x-2 space basis-1/5  md:basis-1/5">
+            <div className='relative p-5'>
                 <img className='h-52 w-64 m-auto object-cover' src='https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png'></img>
-                <h1 className='text-center text-xl '>Individual</h1>
-                <p className='text-base text-center mt-2 text-blue-400'>Individual person can create their own ToDo list and assign their Good and Bad habits</p>
+                <h1 className='text-center  font-bold text-3xl '>Individual</h1>
+                <p className=' text-inline capitalize mt-2 text-white font-light text-l'>Individual person can create their own ToDo list and assign their Good and Bad habits</p>
             </div>
         </div>
 
-        <div className="p-2 h-auto white-glassmorphism space-x-2 space basis-1/5 md:basis-1/5 ">
-            <div className='h-auto p-5'>
+        <div className="p-2 h-auto eth-card white-glassmorphism space-x-2 space basis-1/5 md:basis-1/5 ">
+            <div className='relative p-5'>
                 <img className='h-52 w-64 m-auto object-cover' src='https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png'></img>
-                <h1 className='text-center text-xl '>Team</h1>
-                <p className='text-base text-center mt-2 text-blue-400'>Join or Create your own Group and set you resolution and follow and win NFTs</p>
+                <h1 className='text-center font-bold text-3xl '>Team</h1>
+                <p className=' text-inline capitalize mt-2 text-white font-light text-l'>Join or Create your own Group and set you resolution and follow and win NFTs</p>
             </div>
         </div>
 
-        <div className="p-2 h-auto white-glassmorphism space-x-2 space basis-1/5 md:basis-1/5 ">
-            <div className='h-auto p-5'>
+        <div className="p-2 h-auto white-glassmorphism eth-card space-x-2 space basis-1/5 md:basis-1/5 ">
+            <div className='relative p-5'>
                 <img className='h-52 w-64 m-auto object-cover' src='https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png'></img>
                 <h1 className='text-center text-xl '>Join Organisation</h1>
-                <p className='text-base text-center mt-2 text-blue-400'>Create tracks for you teambers and track then then verify then to set the score Board</p>
+                <p className=' text-inline capitalize mt-2 text-white font-light text-l'>Create tracks for you teambers and track then then verify then to set the score Board</p>
             </div>
         </div>
 
-        <div className="p-2 h-auto white-glassmorphism space-x-2 space basis-1/5 md:basis-1/5 ">
-            <div className='h-auto  p-5'>
+        <div className="p-2 h-auto white-glassmorphism eth-card space-x-2 space basis-1/5 md:basis-1/5 ">
+            <div className='relative p-5'>
                 <img className='h-52 w-64 m-auto object-cover' src='https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png'></img>
                 <h1 className='text-center text-xl '>Win NFTs</h1>
-                <p className='text-base text-center mt-2 text-blue-400'>You will get NFTs as rewards,<br />Top 5 members will get rare NTFs Weekly</p>
+                <p className=' text-inline capitalize mt-2 text-white font-light text-l'>You will get NFTs as rewards,<br />Top 5 members will get rare NTFs Weekly</p>
             </div>
         </div>
 
