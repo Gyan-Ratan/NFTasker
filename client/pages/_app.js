@@ -2,14 +2,7 @@ import '../styles/globals.css'
 import { Web3ReactProvider } from '@web3-react/core'
 import Web3 from 'web3'
 import React from 'react';
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import LoadingScreen from "../todo/Common/Loading";
-import store from "../store";
-import { Provider } from "react-redux";
-import Wait from "../Wait";
-import Head from "next/head";
-import Layout from "../layout/Layout";
+
 
 
 function getLibrary(provider) {
@@ -17,40 +10,11 @@ function getLibrary(provider) {
 }
 
 function MyApp({ Component, pageProps }) {
-
-  const router = useRouter();
-  const [loading, setLoading] = useState(true);
-
-  useEffect(async () => {
-    await Wait(500)
-    setLoading(false);
-
-    const handleStart = async (url) => {
-      if (url !== router.pathname)
-        setLoading(true)
-      await Wait(500)
-      setLoading(false);
-    };
-    const handleComplete = async (url) => {
-      await Wait(500)
-      setLoading(false)
-    };
-    router.events.on("routeChangeStart", handleStart);
-    router.events.on("routeChangeComplete", handleComplete);
-    router.events.on("routeChangeError", handleComplete);
-
-
-  }, [router]);
   return (
     <>
-      {/* <Web3ReactProvider getLibrary={getLibrary}> */}
-      <LoadingScreen loading={loading} />
-      {!loading && <Provider store={store}>
-        <Layout>
+      <Web3ReactProvider getLibrary={getLibrary}>
           <Component{...pageProps} />
-        </Layout>
-      </Provider>}
-      {/* </Web3ReactProvider> */}
+      </Web3ReactProvider>
     </>
   )
 }
