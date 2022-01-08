@@ -20,7 +20,7 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
-    const { connectWallet, currentAccount,formData,sendTransaction,handleChange} = useContext(TransactionsContext);
+    // const { connectWallet, currentAccount,formData,sendTransaction,handleChange} = useContext(TransactionsContext);
 
     // console.log(connectWallet);
    
@@ -39,7 +39,7 @@ const Welcome = () => {
 
     return (
         <div className='flex w-full justify-center items-center  '>
-            <div className='flex mf:flex-row flex-col justify-between md:p-20 py12 px-4'>
+            <div className='flex mf:flex-row flex-row justify-between md:p-20 py12 px-4'>
                 <div className='flex flex-1 justify-start flex-col mf:mr-10'>
                     <h1 className='text-3xl sm:text-5xl capitalize text-transparent bg-clip-text bg-gradient-to-br from-slate-100  py-1'>
                         send crypto <br /> across world
@@ -47,14 +47,14 @@ const Welcome = () => {
                     <p className='text-ledt mt-5 text-slate-100 font-light md:w-9/12 w-11/12 text-base '>
                         Explore the Crypto World. Buy and Sell Cryptocurrencies easily with our Crypto Exchange.
                     </p>
-                    {!currentAccount && (
+                    {/* {!currentAccount && ( */}
                         <button type='button' 
-                            onClick={connectWallet}
+                            // onClick={connectWallet}
                             className='flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd] '
                         >
                             <p className='text-white text-base font-semibold'>Connect Wallet</p>
                         </button>
-                    )}
+                    {/* )} */}
 
                     <div className='grid sm:grid-cols-3 grid-cols-2 w-full mt-10'>
                         <div className={`rounded-tl-2xl ${commonStyles}`}>
@@ -88,8 +88,8 @@ const Welcome = () => {
                             </div>
                             <div >
                                 <p className='text-white font-light text-sm  '>
-                                {currentAccount ? `${shortenAddress(currentAccount)}` : 'Connect Wallet'}
-                                
+                                {/* {currentAccount ? `${shortenAddress(currentAccount)}` : 'Connect Wallet'} */}
+                                {'connect Wallet'}
                                 </p>
                                 <p className='text-white font-semibold text-lg mt-1'>
                                     Ethereum
@@ -100,14 +100,14 @@ const Welcome = () => {
 
 
                     <div className='p-5 sm:w-96 w-full flex flex-col justify-center items-center blue-glassmorphism'>
-                        <Input placeholder='Address To' name='addressTo' type='text' handleChange={handleChange} />
-                        <Input placeholder='Amount (ETH)' name='amount' type='number' handleChange={handleChange} />
-                        <Input placeholder='Keyword (GIF)' name='keyword' type='text' handleChange={handleChange} />
-                        <Input placeholder='Enter Message' name='message' type='text' handleChange={handleChange} />
+                        <Input placeholder='Address To' name='addressTo' type='text' handleChange={()=>(null)} />
+                        <Input placeholder='Amount (ETH)' name='amount' type='number' handleChange={()=>(null)} />
+                        <Input placeholder='Keyword (GIF)' name='keyword' type='text' handleChange={()=>(null)} />
+                        <Input placeholder='Enter Message' name='message' type='text' handleChange={()=>(null)} />
                         <div className='h-[1px] w-full bg-gray-400 my-2 ' />
-                        {/* {false ? ( */}
-                             {/* <Loader /> */}
-                        {/* ) : ( */}
+                        {false ? (
+                             <Loader />
+                        ) : (
                             <button
                                 type='button'
                                 onClick={handleSubmit}
@@ -115,7 +115,7 @@ const Welcome = () => {
                             >
                                 send now
                             </button>
-                         {/* )} */}
+                          )} 
                     </div>
                 </div>
             </div>
