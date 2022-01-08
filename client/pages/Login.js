@@ -1,25 +1,25 @@
-import Image from 'next/image'
-import React from 'react'
+import React,{Component} from 'react'
+import GoogleLogin from 'react-google-login'
+export class App extends Component{
 
+    responseGoogle=(response)=>{
+        console.log(response);
+        console.log(response.profileObj)
+    }
 
-import { useMoralis } from "react-moralis";
-function Login() {
-    // const {authenticate} = useMoralis();
-    return (
-        
-
-        <div className=' '>
-            
-            <h1>Login</h1>
-            <div className='flex flex-col absolute z-50 h-4/6 w-full items-center justify-center space-y-3'>
-                
-
-                </div>
-                <div className='w-full h-screen '>
-                   
-                </div>
-        </div>
-    )
+    render(){
+        <div className='.bg-gray-400'>
+            <div className='.bg-gray-200 .justify-center'>
+                <GoogleLogin
+                clientId="374903690406-7tsc6sl2m8pguj0agrlv8n6t2ie8tlec.apps.googleusercontent.com"
+                buttonText="GOOGLE LOGIN"
+                onSuccess={this.responseGoogle}
+                onFailure={this.responseGoogle}
+                cookiePolicy={'single_host_origin'}
+                />
+            </div>
+            </div>
+    }
 }
 
 export default Login
