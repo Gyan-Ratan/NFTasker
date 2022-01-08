@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
+import {Router,Route } from 'react-router-dom'
 
-// import logo from '../../images/logo.png'client\assets\logo.svg
 import logo from '../assets/logo.png'
 
 const NavbarItem = ({ title, classProps }) => {
@@ -26,13 +26,20 @@ const Navbar = () => {
                     </div>
                 </div>
                 <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-
-                    {['Market', 'Exchange', 'Tutorials', 'Wallet'].map((item, index) => (
+              
+                    <NavbarItem title='Market' classProps=' ' />
+                    <NavbarItem title='Exchange' classProps=' ' />
+                    <NavbarItem title='Tutorials' classProps=' ' />
+                    <NavbarItem title='Wallets' classProps=' ' />
+                    {/* {['Market', 'Exchange', 'Tutorials', 'Wallet'].map((item, index) => (
                         <NavbarItem
                             key={item + index} title={item}
                         />
-                    ))}
-                    <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>Login</li>
+                    ))} */}
+                    
+                    <button className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>Login</button>
+                   
+                  
                 </ul>
                 <div className="flex relative">
                     {toggleMenu
