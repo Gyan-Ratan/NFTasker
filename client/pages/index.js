@@ -22,12 +22,16 @@ export default function Home() {
      
       <div className='gradient-bg-welcome '>
       <Navbar/>
-     
       <Header/>
       <Teamsection/>
+<<<<<<< Updated upstream
       <Welcome/>
       
       {/* <Alanait/> */}
+=======
+      {/* <Welcome/> */}
+      <Alanait/>
+>>>>>>> Stashed changes
       </div> 
       {/* THIS DIV IS DAGEROUS */}
       <Footer/>
