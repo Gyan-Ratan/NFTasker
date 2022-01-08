@@ -2,7 +2,7 @@ import cx from "classnames";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-// import styles from "../styles/Todo.module.css";
+import styles from "../styles/Home.module.css";
 
 const Todo = () => {
     const [todoItem, setTodoItem] = useState("");
@@ -48,7 +48,7 @@ const Todo = () => {
         <div className="h-screen bg-gray-900 text-gray-100">
         <div className="w-3/4 mx-auto">
             <div className="pt-12">
-                <h6 className="mb-2 text-xs font-bold uppercase">Learning React</h6>
+                <h6 className="mb-2 text-xs uppercase">Learning React</h6>
                 <h1 className="text-4xl">Todo App</h1>
             </div>
 
@@ -65,10 +65,10 @@ const Todo = () => {
             <ul className="pt-12">
                 {items
                     .filter(({ done }) => !done)
-                    .map(({ id, message }) => (
+                    .map(({ id, message, done }) => (
                         <li
                             key={id}
-                            className={cx(styles.item)}
+                            className={cx("item",{done})}
                             onClick={() => handleDone(id)}
                         >
                             {message}
@@ -77,10 +77,10 @@ const Todo = () => {
 
                 {items
                     .filter(({ done }) => done)
-                    .map(({ id, message }) => (
+                    .map(({ id, message, done }) => (
                         <li
                             key={id}
-                            className={cx(styles.item, styles.done)}
+                            className={cx("item",{done})}
                             onClick={() => handleDone(id)}
                         >
                             {message}
