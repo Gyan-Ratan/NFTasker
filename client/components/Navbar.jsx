@@ -18,11 +18,13 @@ const Navbar = () => {
         <div className=''>
             <nav className='w-full flex md:justify-center justify-between items-center p-4'>
                 <div className='md:flex-[0.5] flex-initial justify-center items-center'>
-                    <div className='flex flex-row items-center text-center flex-1 '>
+                    <div className='flex flex-row items-center text-center flex-1  '>
+                        <div className='border-2'>
                         <a href='/' className='flex flex-row items-center flex-1 text-center'>
                     <h1 className='text-3xl text-white text-x-bold  p-3 '>N | </h1>
                     <h3 className='text-white px-2'>N F T A S K E R</h3>
                     </a>
+                    </div>
                     </div>
                 </div>
                 <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
