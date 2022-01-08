@@ -8,47 +8,39 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import Teamsection from '../components/Teamsection'
 import Todo from '../components/Todo'
-// import Alanait from '../components/Alanait'
-// import TodosApp from "../todo/TodosApp";
+import Alanait from '../components/Alanait'
+
 // This is for Alan AI
 
 
 export default function Home() {
+  const { isAuthenticated, logout } = useMoralis();
+  // const isAuthenticated = false;
+  if (!isAuthenticated) { return <LoginMoralis /> }
   return (
-   
+
     <div className='w-full h-screen'>
-      
+
       <Head>
         <title>NFTasker</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-     
+
       <div className='gradient-bg-welcome '>
-      <Navbar/>
-      <Header/>
-      <Todo/>
-      <Teamsection/>
-      <Welcome/>
-      {/* <Alanait/> */}
-      
-      
-      <Footer/>
-      </div> 
+        <Navbar />
+        <Header />
+        <Teamsection />
+        <Welcome />
+        <Alanait />
+        
+        <Footer />
+      </div>
     </div>
-   
+
   )
 }
 
-// import TodosApp from "../todo/TodosApp";
 
-// export default function Home() {
-//     const handleAddTodo = () => {
-//         console.log("add");
-//     }
-//     return (<>
-//         <TodosApp/>
-//     </>)
-// }
 
 

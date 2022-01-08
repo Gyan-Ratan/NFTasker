@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 // import {Router,Route } from 'react-router-dom'
-
+import { Login } from "../pages/Login";
 import logo from "../assets/logo.png";
+import { useMoralis } from "react-moralis";
 
 const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer${classProps}`}>{title}</li>;
 };
+const { authenticate } = useMoralis();
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
@@ -27,17 +29,12 @@ const Navbar = () => {
           </div>
         </div>
         <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-          {/* <NavbarItem title="Market" classProps=" " /> */}
-          {/* <NavbarItem title="Exchange" classProps=" " /> */}
-          {/* <NavbarItem title="Tutorials" classProps=" " /> */}
           <NavbarItem title="Wallets" classProps=" " />
-          {/* {['Market', 'Exchange', 'Tutorials', 'Wallet'].map((item, index) => (
-                        <NavbarItem
-                            key={item + index} title={item}
-                        />
-                    ))} */}
 
-          <button className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
+          <button
+            onClick={authenticate}
+            className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]"
+          >
             Login
           </button>
         </ul>
