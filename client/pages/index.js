@@ -10,10 +10,13 @@ import Teamsection from '../components/Teamsection'
 
 // This is for Alan AI
 
+
+
 export default function Home() {
   return (
    
     <div className='w-full h-screen'>
+      
       <Head>
         <title>NFTasker</title>
         <meta name="description" content="" />
@@ -24,17 +27,12 @@ export default function Home() {
       <Navbar/>
       <Header/>
       <Teamsection/>
-<<<<<<< Updated upstream
       <Welcome/>
-      
       {/* <Alanait/> */}
-=======
-      {/* <Welcome/> */}
-      <Alanait/>
->>>>>>> Stashed changes
-      </div> 
-      {/* THIS DIV IS DAGEROUS */}
+      
+      
       <Footer/>
+      </div> 
     </div>
    
   )

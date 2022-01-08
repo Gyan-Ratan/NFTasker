@@ -1,32 +1,25 @@
-import React, { useCallback, useEffect } from 'react';
-import alanBtn from '@alan-ai/alan-sdk-web';
+import React, { useCallback, useEffect } from "react";
+import alanBtn from "@alan-ai/alan-sdk-web";
 
-const alankey = '9a7748dbac42e98f278663cdc6fbf63f2e956eca572e1d8b807a3e2338fdd0dc/stage'
-const Alanait = () => {
-    useEffect(() => {
-        alanBtn({
-            key: alankey,
-            onCommand: (command) => {
-            if (command === 'testCommand') {
-                alert('This code was executed');
-                }
-            },
-            rootEl: document.getElementById("alan-btn"),
-            bottom: '50px',
-            left: '50px',
-            zIndex: 10
-        });
-    }, []);
+const alankey =
+  "9a7748dbac42e98f278663cdc6fbf63f2e956eca572e1d8b807a3e2338fdd0dc/stage";
+export default  Alanait = () => {
+  useEffect(() => {
+    alanBtn({
+      key: alankey,
+      onCommand: (command) => {
+        if (command === "testCommand") {
+          alert("This code was executed");
+        }
+      },
+      rootEl: document.getElementById("alan-btn"),
+      bottom: "50px",
+      left: "50px",
+      zIndex: 10,
+    });
+  }, []);
 
-return (
-    <div>
-<<<<<<< Updated upstream
-        <h2 >This is Alan Test</h2>
-=======
->>>>>>> Stashed changes
-    </div>
-)
+//   return <div></div>;
+};
 
-}
-
-export default Alanait;
+// export default Alanait;
