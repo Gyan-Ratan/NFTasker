@@ -1,7 +1,7 @@
 import cx from "classnames";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-// THIS is Comment
+
 import styles from "../styles/Home.module.css";
 
 const Todo = () => {
@@ -13,6 +13,7 @@ const Todo = () => {
             handleAdd();
         }
     };
+
     const handleAdd = () => {
         if (todoItem) {
             setItems([
