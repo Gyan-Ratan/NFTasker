@@ -9,7 +9,6 @@ import Header from '../components/header'
 import Teamsection from '../components/Teamsection'
 import Todo from '../components/Todo'
 import { useMoralis } from 'react-moralis'
-import { useWeb3React } from '@web3-react/core'
 // import Alanait from '../components/Alanait'
 
 // This is for Alan AI

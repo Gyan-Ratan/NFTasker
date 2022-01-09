@@ -16,7 +16,7 @@ export class Login extends Component{
                 onSuccess={this.responseGoogle}
                 onFailure={this.responseGoogle}
                 cookiePolicy={'single_host_origin'}
-                />
+                />LOGIN
             </div>
             
     )

@@ -4,14 +4,14 @@ import { AiOutlineClose } from "react-icons/ai";
 // import {Router,Route } from 'react-router-dom'
 import { Login } from "../pages/Login";
 import logo from "../assets/logo.png";
-// import { useMoralis } from "react-moralis";
+import { useMoralis } from "react-moralis";
 
 const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer${classProps}`}>{title}</li>;
 };
 
 const NavBar = () => {
-  // const { authenticate } = useMoralis();
+  const { authenticate } = useMoralis();
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="">
@@ -36,7 +36,7 @@ const NavBar = () => {
             // onClick={authenticate}
             className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]"
           >
-            <Login/>
+            Login
           </button>
         </ul>
         <div className="flex relative">

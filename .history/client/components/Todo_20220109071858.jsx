@@ -63,7 +63,7 @@ const Todo = () => {
           <div>
             <div className="relative h-28 w-28 lg:mx-auto white-glassmorphism border-8 rounded-full eth-card">
               {/* avatar */}
-              <Avatars  />
+              <Avatar  />
             </div>
           </div>
           {active ? `${shortenAddress(account)}` : "Connect Wallet"}

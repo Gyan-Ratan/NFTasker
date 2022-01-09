@@ -9,7 +9,6 @@ import Header from '../components/header'
 import Teamsection from '../components/Teamsection'
 import Todo from '../components/Todo'
 import { useMoralis } from 'react-moralis'
-import { useWeb3React } from '@web3-react/core'
 // import Alanait from '../components/Alanait'
 
 // This is for Alan AI
@@ -19,18 +18,8 @@ export default function Home() {
 
   //  {/*const { isAuthenticated, logout } = useMoralis();*/}
 
-  {/* const isAuthenticated = false;*/ }
-  {/* if (!isAuthenticated) { return <LoginMoralis /> }*/ }
-  const {active,account,library, connector, activate,deactivate}=useWeb3React()
-    
-    async function connect(){
-        try{
-            await activate(injected)
-        }catch(e){
-            console.log(e)
-        }
-        
-    }
+  {/* const isAuthenticated = false;*/}
+  {/* if (!isAuthenticated) { return <LoginMoralis /> }*/}
   return (
 
     <div className='w-full h-screen'>
@@ -42,14 +31,16 @@ export default function Home() {
       </Head>
 
       <div className='gradient-bg-welcome '>
-        {!active && (
-          <><NavBar /><Header /><Teamsection /><Welcome /><Footer /></>
-
-        )
-        }
+        {!active &&(
+        <><NavBar /><Header /><Teamsection /><Welcome /><Footer/></>
+        
+   
+}
         :
-        {active && (
-          <><NavBar /><Todo /><Footer /></>
+        
+          <NavBar />
+          <Todo/>
+          <Footer/>
         )}
       </div>
     </div>

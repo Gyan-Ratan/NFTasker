@@ -11,7 +11,7 @@ const NavbarItem = ({ title, classProps }) => {
 };
 
 const NavBar = () => {
-  // const { authenticate } = useMoralis();
+  const { authenticate } = useMoralis();
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="">
@@ -33,7 +33,7 @@ const NavBar = () => {
           <NavbarItem title="Wallets" classProps=" " />
 
           <button
-            // onClick={authenticate}
+            onClick={authenticate}
             className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]"
           >
             <Login/>

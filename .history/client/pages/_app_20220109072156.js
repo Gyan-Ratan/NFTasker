@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
           <Component{...pageProps} />
       </Web3ReactProvider>
      
-    </MoralisProvider>
+    {/* </MoralisProvider> */}
     </>
   )
 }

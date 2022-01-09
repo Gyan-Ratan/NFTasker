@@ -2,7 +2,7 @@ import { useWeb3React } from "@web3-react/core";
 import cx from "classnames";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import Avatars from '../components/Avatars';
+
 import styles from "../styles/Home.module.css";
 import shortenAddress from "../utils/shortenAddress";
 
@@ -61,9 +61,9 @@ const Todo = () => {
       <div className="w-3/4 mx-auto">
         <div>
           <div>
-            <div className="relative h-28 w-28 lg:mx-auto white-glassmorphism border-8 rounded-full eth-card">
+            <div className="relative h-28 w-28 lg:mx-auto glassmorpborder-8 rounded-full">
               {/* avatar */}
-              <Avatars  />
+              <Avatar logoutOnPress />
             </div>
           </div>
           {active ? `${shortenAddress(account)}` : "Connect Wallet"}
