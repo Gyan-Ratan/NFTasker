@@ -14,6 +14,7 @@
     "@mui/material": "^5.2.7",
     "@nextui-org/react": "^1.0.1-alpha.52",
     "@walletconnect/core": "^1.7.0",
+    "@walletconnect/web3-provider": "^1.7.0",
     "@web3-react/core": "^6.1.9",
     "@web3-react/injected-connector": "^6.0.7",
     "autosize": "^5.0.1",
