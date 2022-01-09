@@ -1,7 +1,7 @@
 import cx from "classnames";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-
+import styles from "../styles/Home.module.css";
 const Todo = () => {
     const [todoItem, setTodoItem] = useState("");
     const [items, setItems] = useState([]);
@@ -46,7 +46,7 @@ const Todo = () => {
                         setNum(num+1)
                     }
                     const decNum =() =>{
-                        if(NUM > 0){
+                        if(num > 0){
                         setNum(num-1)
                         }
                         else{
