@@ -57,10 +57,10 @@ const Todo = () => {
 
 
     return (
-        <div className="h-screen bg-gray-900 text-gray-100">
+        <div className="h-screen white-glassmorphism text-gray-100">
         <div className="w-3/4 mx-auto">
-            <div className="pt-12">
-                <h1 className="text-4xl text-center">Todo App</h1>
+            <div className="pt-12 w-full">
+                <h1 className="text-center text-xl text-white">Current Score : {num}</h1>
             </div>
 
             <div className="pt-12">
@@ -84,7 +84,7 @@ const Todo = () => {
                             // onClick={() => handleDone(id)}
                         >
                             {message}
-                            <button onClick={() => { handleDone(id); incNum();}}>DONE</button>
+                            <button onClick={() => { handleDone(id); incNum();}} className="border-2 border-red-600 absolute right-96 rounded-lg">DONE</button>
                         </li>
                     ))}
             <p className="text-center text-gray-600">______________________ DONE ______________________</p>
@@ -97,13 +97,13 @@ const Todo = () => {
                             // onClick={() => handleDone(id)}
                         >
                             {message}
-                            <button onClick={() => { handleDone(id); decNum();}}>DONE</button>
+                            <button onClick={() => { handleDone(id); decNum();}} className="border-2 border-red-600 absolute right-96 rounded-lg">NOT DONE</button>
                         </li>
                     ))}
             
             </ul>
         </div>
-        <h1 className="text-left text-xl text-white">{num}</h1>
+        
         </div>
     );
 };
