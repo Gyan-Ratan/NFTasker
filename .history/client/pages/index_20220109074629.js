@@ -10,29 +10,17 @@ import Teamsection from '../components/Teamsection'
 import Todo from '../components/Todo'
 import { useMoralis } from 'react-moralis'
 import { useWeb3React } from '@web3-react/core'
-import LoginMoralis from '../components/LoginMoralis'
-import Main from '../components/Main'
-
 // import Alanait from '../components/Alanait'
 
 // This is for Alan AI
 
 
 export default function Home() {
-  const {active,account,library, connector, activate,deactivate}=useWeb3React()
-    
-  async function connect(){
-      try{
-          await activate(injected)
-      }catch(e){
-          console.log(e)
-      }
-      
-  }
+
   const { isAuthenticated, logout } = useMoralis();
 
   {/* const isAuthenticated = false;*/ }
-  if (!isAuthenticated) { return <Main /> }
+  {/* if (!isAuthenticated) { return <LoginMoralis /> }*/ }
   
   return (
 

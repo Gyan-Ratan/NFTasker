@@ -3,7 +3,7 @@ import cx from "classnames";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Avatars from '../components/Avatars';
-import Home from "./Main";
+import Home from "../components/";
 import styles from "../styles/Home.module.css";
 import shortenAddress from "../utils/shortenAddress";
 

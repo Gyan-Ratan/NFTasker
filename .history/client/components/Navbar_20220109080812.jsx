@@ -6,7 +6,7 @@ import { Login } from "../pages/Login";
 import logo from "../assets/logo.png";
 import { useMoralis } from "react-moralis";
 import Todo from '../components/Todo'
-import Home from "./Main";
+import Home from "./Home";
 const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer${classProps}`}>{title}</li>;
 };

@@ -10,9 +10,9 @@ function LoginMoralis() {
             
                    
                 <button onClick= {authenticate}
-                    className='rounded-lg p-5 eth-card font-bold animate-pulse'> 
+                    className='bg-yellow-500 rounded-lg p-5 font-bold animate-pulse'> 
                     Login to Todo</button>
-            
+                
                 
         </div>
     )

@@ -5,14 +5,14 @@ import { useMoralis } from "react-moralis";
 function LoginMoralis() {
     const {authenticate} = useMoralis();
     return (
-        <div className='bg-eth-card '>
+        <div className='eth-card '>
             
             
                    
                 <button onClick= {authenticate}
-                    className='rounded-lg p-5 eth-card font-bold animate-pulse'> 
-                    Login to Todo</button>
-            
+                    className='bg-yellow-500 rounded-lg p-5 font-bold animate-pulse'> 
+                    Login to NxtGen</button>
+                </div>
                 
         </div>
     )

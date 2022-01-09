@@ -11,7 +11,6 @@ import Todo from '../components/Todo'
 import { useMoralis } from 'react-moralis'
 import { useWeb3React } from '@web3-react/core'
 import LoginMoralis from '../components/LoginMoralis'
-import Main from '../components/Main'
 
 // import Alanait from '../components/Alanait'
 
@@ -32,7 +31,7 @@ export default function Home() {
   const { isAuthenticated, logout } = useMoralis();
 
   {/* const isAuthenticated = false;*/ }
-  if (!isAuthenticated) { return <Main /> }
+  if (!isAuthenticated) { return <Ma /> }
   
   return (
 

@@ -4,15 +4,14 @@ import { AiOutlineClose } from "react-icons/ai";
 // import {Router,Route } from 'react-router-dom'
 import { Login } from "../pages/Login";
 import logo from "../assets/logo.png";
-import { useMoralis } from "react-moralis";
-import Todo from '../components/Todo'
-import Home from "./Main";
+// import { useMoralis } from "react-moralis";
+
 const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer${classProps}`}>{title}</li>;
 };
 
 const NavBar = () => {
-  const { authenticate } = useMoralis();
+  // const { authenticate } = useMoralis();
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="">
@@ -32,20 +31,14 @@ const NavBar = () => {
         </div>
         <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
           <NavbarItem title="Wallets" classProps=" " />
-          
+
           <button
-            onClick={authenticate}
+            // onClick={authenticate}
             className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]"
           >
-            {/* <Login  onClick={`${<Todo/>}`}/> */}
+            <Login/>
           </button>
-          <button className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse"
-            logoutOnPress={`${<Home/>}`}
-            
-          >
-            <span className='bg-yellow-500 rounded-lg p-5 font-bold animate-pulse'>Login With metamask</span>
-          </button>
-         
+          
         </ul>
         <div className="flex relative">
           {toggleMenu ? (

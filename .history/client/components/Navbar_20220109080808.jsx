@@ -6,7 +6,7 @@ import { Login } from "../pages/Login";
 import logo from "../assets/logo.png";
 import { useMoralis } from "react-moralis";
 import Todo from '../components/Todo'
-import Home from "./Main";
+import Home from "./Home";
 const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer${classProps}`}>{title}</li>;
 };
@@ -34,7 +34,7 @@ const NavBar = () => {
           <NavbarItem title="Wallets" classProps=" " />
           
           <button
-            onClick={authenticate}
+            // onClick={authenticate}
             className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]"
           >
             {/* <Login  onClick={`${<Todo/>}`}/> */}
