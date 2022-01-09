@@ -2,8 +2,6 @@ import cx from "classnames";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-import styles from "../styles/Home.module.css";
-
 const Todo = () => {
     const [todoItem, setTodoItem] = useState("");
     const [items, setItems] = useState([]);
@@ -43,12 +41,26 @@ const Todo = () => {
 
         setItems(_items);
     };
+                    const [num, setNum] =useState(0);
+                    const incNum =() =>{
+                        setNum(num+1)
+                    }
+                    const decNum =() =>{
+                        if(NUM > 0){
+                        setNum(num-1)
+                        }
+                        else{
+                            alert('Zero is there')
+                            setNum(0);
+                        }
+                    }
+
 
     return (
         <div className="h-screen bg-gray-900 text-gray-100">
         <div className="w-3/4 mx-auto">
             <div className="pt-12">
-                <h1 className="text-4xl">Todo App</h1>
+                <h1 className="text-4xl text-center">Todo App</h1>
             </div>
 
             <div className="pt-12">
@@ -69,9 +81,10 @@ const Todo = () => {
                         <li
                             key={id}
                             className={cx(styles.item)}
-                            onClick={() => handleDone(id)}
+                            // onClick={() => handleDone(id)}
                         >
                             {message}
+                            <button onClick={() => { handleDone(id); incNum();}}>DONE</button>
                         </li>
                     ))}
             <p className="text-center text-gray-600">______________________ DONE ______________________</p>
@@ -81,13 +94,16 @@ const Todo = () => {
                         <li
                             key={id}
                             className={cx(styles.item, styles.done)}
-                            onClick={() => handleDone(id)}
+                            // onClick={() => handleDone(id)}
                         >
                             {message}
+                            <button onClick={() => { handleDone(id); decNum();}}>DONE</button>
                         </li>
                     ))}
+            
             </ul>
         </div>
+        <h1 className="text-left text-xl text-white">{num}</h1>
         </div>
     );
 };
