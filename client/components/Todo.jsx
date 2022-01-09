@@ -1,4 +1,4 @@
-import cx from "classnames";
+// import cx from "classnames";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -68,7 +68,7 @@ const Todo = () => {
                     .map(({ id, message, done }) => (
                         <li
                             key={id}
-                            className={cx(styles.item)}
+                            className={(styles.item)}
                             onClick={() => handleDone(id)}
                         >
                             {message}
@@ -80,7 +80,7 @@ const Todo = () => {
                     .map(({ id, message, done }) => (
                         <li
                             key={id}
-                            className={cx(styles.item, styles.done)}
+                            className={(styles.item, styles.done)}
                             onClick={() => handleDone(id)}
                         >
                             {message}

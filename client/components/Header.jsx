@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
                     </span>
                 </h2>
                 <p className="text-md mt-4 text-gray-400">
-                    This is World's First Gamified Todo Dapp with Blockchain implementation and NFTs as Rewards.
+                    This is World`&apos;s First Gamified Todo Dapp with Blockchain implementation and NFTs as Rewards.
                 </p>
                 <div className="lg:mt-0 lg:flex-shrink-0">
                     <div className="mt-12 inline-flex rounded-md shadow">
@@ -22,10 +23,10 @@ const Header = () => {
                 </div>
             </div>
             <div className="flex items-center gap-8 p-8 lg:p-24">
-                <img src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" className="rounded-lg w-1/2" alt="Tree" />
+                <Image src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" className="rounded-lg w-1/2" alt="Tree" />
                 <div>
-                    <img src="https://cdn-icons-png.flaticon.com/128/6298/6298900.png" className="rounded-lg mb-9" alt="Tree" />
-                    <img src="https://info.trello.com/hubfs/Imported_Blog_Media/gamification_of_life-1024x512.jpg" className="rounded-lg" alt="Tree" />
+                    <Image src="https://cdn-icons-png.flaticon.com/128/6298/6298900.png" className="rounded-lg mb-9" alt="Tree" />
+                    <Image src="https://info.trello.com/hubfs/Imported_Blog_Media/gamification_of_life-1024x512.jpg" className="rounded-lg" alt="Tree" />
                 </div>
             </div>
         </div>

@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-// import {Router,Route } from 'react-router-dom'
+
 import { Login } from "../pages/Login";
 import logo from "../assets/logo.png";
 import { useMoralis } from "react-moralis";
+import Link  from "next/link";
 
-const NavbarItem = ({ title, classProps }) => {
+
+const NavbarItems = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer${classProps}`}>{title}</li>;
 };
 // const { authenticate } = useMoralis();
-const Navbar = () => {
+const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="">
@@ -18,24 +20,24 @@ const Navbar = () => {
         <div className="md:flex-[0.5] flex-initial justify-center items-center">
           <div className="flex flex-row items-center text-center flex-1  ">
             <div className="border-2">
-              <a
-                href="/"
+              <Link to="/"
+               
                 className="flex flex-row items-center flex-1 text-center"
               >
                 <h1 className="text-3xl text-white text-x-bold  p-3 ">N | </h1>
                 <h3 className="text-white px-2">N F T a s k e r</h3>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
         <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-          <NavbarItem title="Wallets" classProps=" " />
+          <NavbarItems title="Wallets" classProps=" " />
 
           <button
             // onClick={authenticate}
             className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]"
           >
-            <Login/>
+            {/* <Login/> */}hi
           </button>
         </ul>
         <div className="flex relative">
@@ -62,7 +64,7 @@ const Navbar = () => {
               </li>
               {["Market", "Exchange", "Tutorials", "Wallet"].map(
                 (item, index) => (
-                  <NavbarItem
+                  <NavbarItems
                     key={item + index}
                     title={item}
                     classProps={"my-2 text-lg"}
@@ -77,4 +79,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
