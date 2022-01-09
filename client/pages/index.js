@@ -17,7 +17,7 @@ import Main from '../components/Main'
 
 // This is for Alan AI
 
-
+// const {  logout } = useMoralis();
 export default function Home() {
   const {active,account,library, connector, activate,deactivate}=useWeb3React()
     

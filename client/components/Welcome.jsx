@@ -38,7 +38,9 @@ const  Welcome = () => {
                         >
                             <p className='text-white text-base font-semibold'>Connect Wallet</p>
                         </button>
-                     )}  
+                     )
+                     
+                     }  
 
                     <div className='grid sm:grid-cols-3 grid-cols-2 w-full mt-10'>
                         <div className={`rounded-tl-2xl ${commonStyles}`}>

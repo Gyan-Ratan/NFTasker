@@ -1,5 +1,7 @@
 import React,{Component} from 'react'
 import GoogleLogin from 'react-google-login'
+import { Footer, NavBar } from '../components';
+import Todo from '../components/Todo';
 export class Login extends Component{
 
     responseGoogle=(response)=>{
@@ -17,6 +19,9 @@ export class Login extends Component{
                 onFailure={this.responseGoogle}
                 cookiePolicy={'single_host_origin'}
                 />
+                <NavBar/>
+                <Todo/>
+                <Footer/>
             </div>
             
     )

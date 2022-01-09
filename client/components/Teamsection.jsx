@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import  Image  from 'next/image'
 const Teamsection = () => {
@@ -36,11 +37,7 @@ const Teamsection = () => {
                 <p className=' text-inline capitalize mt-2 text-white font-light text-l'>You will get NFTs as rewards,<br />Top 5 members will get rare NTFs Weekly</p>
             </div>
         </div>
-
-
-        
-        
-        
+   
     </div>
 </div>
     )

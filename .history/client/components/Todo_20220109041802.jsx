@@ -1,10 +1,8 @@
-// import cx from "classnames";
+import cx from "classnames";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import styles from "../styles/Home.module.css";
-// import Onecdot from '../components'
-import Avatars from './Avatars'
 
+import styles from "../styles/Home.module.css";
 
 const Todo = () => {
     const [todoItem, setTodoItem] = useState("");
@@ -45,29 +43,12 @@ const Todo = () => {
 
         setItems(_items);
     };
-                    const [num, setNum] =useState(0);
-                    const incNum =() =>{
-                        setNum(num+1)
-                    }
-                    const decNum =() =>{
-                        if(num > 0){
-                        setNum(num-1)
-                        }
-                        else{
-                            alert('Zero is there')
-                            setNum(0);
-                        }
-                    }
-
 
     return (
-        <div className="h-screen white-glassmorphism text-gray-100">
-            
+        <div className="h-screen bg-glassmorphism-welcome text-gray-100">
         <div className="w-3/4 mx-auto">
-        
-            <div className="pt-12 w-full">
-                
-                <h1 className="text-center text-xl text-white">Current Score : {num}</h1>
+            <div className="pt-12">
+                <h1 className="text-4xl">Todo App</h1>
             </div>
 
             <div className="pt-12">
@@ -79,7 +60,6 @@ const Todo = () => {
                     onKeyDown={handleEnter}
                 />
             </div>
-            
 
             <ul className="pt-12">
             <p className="text-center text-gray-600">______________________ TODO ______________________</p><br />
@@ -89,10 +69,9 @@ const Todo = () => {
                         <li
                             key={id}
                             className={cx(styles.item)}
-                            // onClick={() => handleDone(id)}
+                            onClick={() => handleDone(id)}
                         >
                             {message}
-                            <button onClick={() => { handleDone(id); incNum();}} className="border-2 border-red-600 absolute right-96 rounded-lg">DONE</button>
                         </li>
                     ))}
             <p className="text-center text-gray-600">______________________ DONE ______________________</p>
@@ -102,17 +81,13 @@ const Todo = () => {
                         <li
                             key={id}
                             className={cx(styles.item, styles.done)}
-                            // onClick={() => handleDone(id)}
+                            onClick={() => handleDone(id)}
                         >
                             {message}
-                            <button onClick={() => { handleDone(id); decNum();}} className="border-2 border-red-600 absolute right-96 rounded-lg">NOT DONE</button>
                         </li>
                     ))}
-            
             </ul>
         </div>
-        {/* <Onecdot/> */}
-        {/* <Main/> */}
         </div>
     );
 };

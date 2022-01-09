@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import { Web3ReactProvider } from '@web3-react/core'
 import Web3 from 'web3'
 import React from 'react'
-import { MoralisProvider } from "react-moralis";
+// import { MoralisProvider } from "react-moralis";
 
 function getLibrary(provider) {
   return new Web3(provider);
