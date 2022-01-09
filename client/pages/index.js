@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Image from 'next/image'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import NavBar from '../components/Navbar'
 import Welcome from '../components/Welcome'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
@@ -16,7 +16,7 @@ import { useMoralis } from 'react-moralis'
 
 export default function Home() {
 
-   {/*const { isAuthenticated, logout } = useMoralis();*/}
+  //  {/*const { isAuthenticated, logout } = useMoralis();*/}
 
   {/* const isAuthenticated = false;*/}
   {/* if (!isAuthenticated) { return <LoginMoralis /> }*/}
@@ -31,7 +31,7 @@ export default function Home() {
       </Head>
 
       <div className='gradient-bg-welcome '>
-        {/* <Navbar /> */}
+        {/* <NavBar /> */}
         <Header />
         <Teamsection />
         <Welcome />

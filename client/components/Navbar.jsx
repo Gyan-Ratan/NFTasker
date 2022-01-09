@@ -10,7 +10,7 @@ const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer${classProps}`}>{title}</li>;
 };
 
-const Navbar = () => {
+const NavBar = () => {
   const { authenticate } = useMoralis();
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
@@ -78,4 +78,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
