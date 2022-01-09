@@ -20,10 +20,12 @@ useEffect(() => {
             "metadata_list": [
 
               {
-                "public_address": ${shortenAddress(account)},
+                "public_address": "string",
                 "metadata": {
                   "name": "NFTASKER",
-                  "image": "https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png" 
+                  "image": "https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png"
+                    
+                  
                 }
               }
             ]
@@ -36,6 +38,6 @@ useEffect(() => {
         console.log(error);
     });
 }, [])
-// {active ? `${shortenAddress(account)}` : 'Connect Wallet'}
-export default Onecdot
+      
+export d Onecdot
 

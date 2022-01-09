@@ -1,88 +1,84 @@
-import { useWeb3React } from "@web3-react/core";
 import cx from "classnames";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import Avatars from '../components/Avatars';
-import Home from "./Main";
 import styles from "../styles/Home.module.css";
+<<<<<<< HEAD
 import shortenAddress from "../utils/shortenAddress";
 import Main from './NFTs/Main';
+=======
+>>>>>>> 3d214a1f4cb4e43930e0467b1da280d57c59e923
 const Todo = () => {
-  const [todoItem, setTodoItem] = useState("");
-  const [items, setItems] = useState([]);
+    const [todoItem, setTodoItem] = useState("");
+    const [items, setItems] = useState([]);
 
-  const handleEnter = (event) => {
-    if (event.key === "Enter") {
-      handleAdd();
-    }
-  };
+    const handleEnter = (event) => {
+        if (event.key === "Enter") {
+            handleAdd();
+        }
+    };
 
-  const handleAdd = () => {
-    if (todoItem) {
-      setItems([
-        {
-          id: uuidv4(),
-          message: todoItem,
-          done: false,
-        },
-        ...items,
-      ]);
+    const handleAdd = () => {
+        if (todoItem) {
+            setItems([
+                {
+                    id: uuidv4(),
+                    message: todoItem,
+                    done: false,
+                },
+                ...items,
+            ]);
 
-      setTodoItem("");
-    }
-  };
+            setTodoItem("");
+        }
+    };
 
-  const handleDone = (id) => {
-    const _items = items.map((item) => {
-      if (item.id === id) {
-        return {
-          ...item,
-          done: !item.done,
-        };
-      }
+    const handleDone = (id) => {
+        const _items = items.map((item) => {
+            if (item.id === id) {
+                return {
+                    ...item,
+                    done: !item.done,
+                };
+            }
 
-      return item;
-    });
+            return item;
+        });
 
-    setItems(_items);
-  };
-  const { active, account, library, connector, activate, deactivate } =
-    useWeb3React();
+        setItems(_items);
+    };
+                    const [num, setNum] =useState(0);
+                    const incNum =() =>{
+                        setNum(num+1)
+                    }
+                    const decNum =() =>{
+                        if(num > 0){
+                        setNum(num-1)
+                        }
+                        else{
+                            alert('Zero is there')
+                            setNum(0);
+                        }
+                    }
 
-  async function connect() {
-    try {
-      await activate(injected);
-    } catch (e) {
-      console.log(e);
-    }
-  }
 
-  return (
-    <div className="h-screen bg-glassmorphism-welcome white-glassmorphism p-2 text-gray-100">
-      <div className="w-3/4 mx-auto">
-        <div>
-          <div>
-            <div className="relative h-28 w-28 lg:mx-auto white-glassmorphism border-8 rounded-full eth-card">
-              {/* avatar */}
-              <Avatars logoutOnPress={`${<Home/>}`} />
+    return (
+        <div className="h-screen white-glassmorphism text-gray-100">
+        <div className="w-3/4 mx-auto">
+            <div className="pt-12 w-full">
+                <h1 className="text-center text-xl text-white">Current Score : {num}</h1>
             </div>
-          </div>
-          {active ? `${shortenAddress(account)}` : "Connect Wallet"}
-        </div>
-        <div className="pt-12">
-          <h1 className="text-4xl">Todo App</h1>
-        </div>
 
-        <div className="pt-12">
-          <input
-            type="text"
-            value={todoItem}
-            className="w-full rounded py-2 px-4 text-gray-900"
-            onChange={(e) => setTodoItem(e.target.value)}
-            onKeyDown={handleEnter}
-          />
-        </div>
+            <div className="pt-12">
+                <input
+                    type="text"
+                    value={todoItem}
+                    className="w-full rounded py-2 px-4 text-gray-900"
+                    onChange={(e) => setTodoItem(e.target.value)}
+                    onKeyDown={handleEnter}
+                />
+            </div>
 
+<<<<<<< HEAD
         <ul className="pt-12">
           <p className="text-center text-gray-600">
             ______________________ TODO ______________________
@@ -118,6 +114,41 @@ const Todo = () => {
       <Main/>
     </div>
   );
+=======
+            <ul className="pt-12">
+            <p className="text-center text-gray-600">______________________ TODO ______________________</p><br />
+                {items
+                    .filter(({ done }) => !done)
+                    .map(({ id, message, done }) => (
+                        <li
+                            key={id}
+                            className={cx(styles.item)}
+                            // onClick={() => handleDone(id)}
+                        >
+                            {message}
+                            <button onClick={() => { handleDone(id); incNum();}} className="border-2 border-red-600 absolute right-96 rounded-lg">DONE</button>
+                        </li>
+                    ))}
+            <p className="text-center text-gray-600">______________________ DONE ______________________</p>
+                {items
+                    .filter(({ done }) => done)
+                    .map(({ id, message, done }) => (
+                        <li
+                            key={id}
+                            className={cx(styles.item, styles.done)}
+                            // onClick={() => handleDone(id)}
+                        >
+                            {message}
+                            <button onClick={() => { handleDone(id); decNum();}} className="border-2 border-red-600 absolute right-96 rounded-lg">NOT DONE</button>
+                        </li>
+                    ))}
+            
+            </ul>
+        </div>
+        
+        </div>
+    );
+>>>>>>> 3d214a1f4cb4e43930e0467b1da280d57c59e923
 };
 
 export default Todo;
