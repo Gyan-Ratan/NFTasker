@@ -25,7 +25,7 @@ This an Gamified Todo Dapp with NFTs as reward
   <p align="center">
     An awesome way to earn NFTs as Reward on completing your Boring taskes 
     <br />
-    <a href="https://github.com/Gyan-Ratan/NFTasker"><strong>Explore Files »</strong></a>
+    <a href="https://www.youtube.com/watch?v=pUlUzoN70e4&feature=youtu.be"><strong>VIDEO HERE»</strong></a>
     <br />
     <br />
   </p>
