@@ -36,7 +36,7 @@ const NavBar = () => {
           <button
             onClick={authenticate}
             className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]"
-          >
+          >LOGOUT
             {/* <Login  onClick={`${<Todo/>}`}/> */}
           </button>
           <button className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse"
