@@ -11,12 +11,12 @@ function getLibrary(provider) {
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* <MoralisProvider appId={process.env.NEXT_PUBLIC_APP_ID} serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}>  */}
+      <MoralisProvider appId={process.env.NEXT_PUBLIC_APP_ID} serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}> 
       <Web3ReactProvider getLibrary={getLibrary}>
           <Component{...pageProps} />
       </Web3ReactProvider>
      
-    {/* </MoralisProvider> */}
+    </MoralisProvider>
     </>
   )
 }

@@ -7,5 +7,5 @@ export { default as Welcome} from './Welcome'
 export { default as Alanait} from './Alanait'
 export { default as Todo} from './Todo'
 
-// export { default as Register} from './Register'
+
 // export { default as Alanaite} from './Alanaite'

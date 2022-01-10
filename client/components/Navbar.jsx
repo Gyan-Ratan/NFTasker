@@ -5,14 +5,16 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Login } from "../pages/Login";
 import logo from "../assets/logo.png";
 import { useMoralis } from "react-moralis";
-import Link  from "next/link";
-
-
-const NavbarItems = ({ title, classProps }) => {
+import Todo from '../components/Todo'
+import Main from "./Main";
+import Onecdot from '../components/Onecdot' 
+import LoginMoralis from '../components/LoginMoralis'
+const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer${classProps}`}>{title}</li>;
 };
-// const { authenticate } = useMoralis();
+
 const NavBar = () => {
+  const { authenticate } = useMoralis();
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="">
@@ -20,25 +22,33 @@ const NavBar = () => {
         <div className="md:flex-[0.5] flex-initial justify-center items-center">
           <div className="flex flex-row items-center text-center flex-1  ">
             <div className="border-2">
-              <Link to="/"
-               
+              <span
+                
                 className="flex flex-row items-center flex-1 text-center"
               >
                 <h1 className="text-3xl text-white text-x-bold  p-3 ">N | </h1>
                 <h3 className="text-white px-2">N F T a s k e r</h3>
-              </Link>
+              </span>
+              <Onecdot/>
             </div>
           </div>
         </div>
         <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-          <NavbarItems title="Wallets" classProps=" " />
-
+          <NavbarItem title="Wallets" classProps=" " />
+          
           <button
             // onClick={authenticate}
             className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]"
-          >
-            {/* <Login/> */}hi
+          >LOGIN
+            {/* <LoginMoralis  onClick={`${<Todo/>}`}/> */}
           </button>
+          <button className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse"
+            logoutOnPress={`${<Main/>}`}
+            
+          >
+            <span className='bg-yellow-500 rounded-lg p-5 font-bold animate-pulse'>Logout</span>
+          </button>
+         
         </ul>
         <div className="flex relative">
           {toggleMenu ? (
