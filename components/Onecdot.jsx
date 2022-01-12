@@ -1,0 +1,60 @@
+import React,{useEffect} from 'react'
+import axios from 'axios'
+import {useWeb3React} from '@web3-react/core'
+// import {shortenAddress} from '../utils/shortenAddress'
+import {injected} from '../components/Wallet/Connected'
+const Onecdot = () => {
+    const headers  = {
+        // 'Content-Type': 'application/json',
+        // 'Accept': 'application/json',
+        'NAAS-APIKEY':'b9ec0ef1-d959-442f-905a-92cdad366fa0',
+        'Content-Type': 'application/json'}
+    // { 
+    //         'NAAS-APIKEY':'b9ec0ef1-d959-442f-905a-92cdad366fa0',
+    //         'Content-Type': 'application/json'
+            
+    // }
+    useEffect(() => {
+        axios.post('https://api.onec.in/api/v1/naas/mintNFT/',
+            {
+                "metadata_list": [
+                  {
+                    "public_address": `${account}`,
+                    "metadata": {
+                      "name": "NFTASKER",
+                      "image": "https://www.notion.so/cdn-cgi/image/format=auto,width=664,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png", 
+                    }
+                  }
+                ],
+            }
+            ,{headers:headers})
+         
+            .then(function (response) {
+                console.log(response);
+            }
+        )
+        .catch(function (error) {
+            console.log(error);
+        }) 
+    }, [])
+    
+    const {active,account,library, connector, activate,deactivate}=useWeb3React()
+    
+    async function connect(){
+        try{
+            await activate(injected)
+        }catch(e){
+            console.log(e)
+        }
+        
+    }
+    return (
+        <div>
+            <button className=' white-glassmorphism py-2 px-7 mx-4 rounded-full cursor-pointer' onClick={connect}>Connect</button>
+        </div>
+    )
+}
+
+export default Onecdot
+
+
